@@ -1,45 +1,5 @@
-/*学籍番号:1TE23939R 氏名:室原碧人*/
 #include <stdio.h>
-#define MAX 10
-
-void push(int S[], int *size, int *top, int x) {
-    if (*size == MAX)
-    {
-        printf("overflow\n"); 
-    }
-    else
-    {
-        (*top)++;
-        (*size)++;
-        S[*top] = x;   
-    }
-}
-
-int pop(int S[], int *size, int *top) {
-    if (*size ==0)
-    {
-        printf("under flow\n");
-        return -1;
-    }
-    else {
-        (*top)--;
-        (*size)--;
-        int x = S[(*top) + 1];
-        return x;
-    }
-}
-
-int displaystack(int S[], int size, int top) {
-        printf("stack array is ");
-    for (int i = 0; i < top + 1; i++)
-    {
-        printf("%d ", S[i]); 
-    }
-    printf("\n");
-    printf("S.top: %d", top);
-    printf("\n");
-
-}
+#include "stack.c"
 
 void hanoi_stack(int n, int a[], int *size_a, int *top_a, int b[], int *size_b, int *top_b,
 int c[], int *size_c, int *top_c, char from_rod, char aux_rod, char to_rod) 
