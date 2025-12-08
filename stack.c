@@ -3,7 +3,7 @@
 void push(int SB[], int *size, int *SP, int data);
 int pop(int SB[], int *size, int *SP);
 int displaystack(int SB[], int size, int SP);
-int main() {
+/*int main() {
     int S[MAX];
     int top = -1;
     int size = 0;
@@ -61,7 +61,7 @@ int main() {
     printf("\n=== All tests completed ===\n");
     
     return 0;
-}
+}*/
 
 void push(int SB[], int *size, int *SP, int data) {
     if (*size == MAX)
